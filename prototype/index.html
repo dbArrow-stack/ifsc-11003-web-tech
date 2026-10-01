@@ -1,27 +1,34 @@
 <!DOCTYPE HTML>
 <html lang="eng">
-    <head>
-<title>Web Foundations: Building Meaningful Pages</title>
-<meta charset="UTF-8">
-<meta name="author" content="Db">
-</head>
-<h1>Understanding Semantic HTML</h1>
- <main>
-<ul>
-    <li>Home</li>
-    <li>HTML Basics</li>
-    <li>Accessibility</li>
-    <li>Resources</li>
-    <li>Contact</li>
-</ul> 
-<body>
 
- 
+<head>
+    <title>Web Foundations: Building Meaningful Pages</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HTML5 document for assignment M2">
+    <meta name="author" content="Derrick Butler">
+</head>
+
+<body>
+    <header>
+    <h1>Understanding Semantic HTML</h1>
+    <nav go="Menu">
+        <ol>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#HTML Basics">HTML Basics</a></li>
+            <li><a href="#Accessibility">Accessibility</a></li>
+            <li><a href="#Resources">Resources</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ol> 
+    </nav>
 <p>The web is more than a collection of visually formatted documents. HTML provides meaning and structure to content so that browsers, search engines, assistive technologies, and people can better understand how information is organized.
  
 HTML stands for HyperText Markup Language. It describes the structure and meaning of content rather than how that content should look. CSS is generally responsible for presentation, while JavaScript can add behavior and interactivity.</p> 
+</header>
 
-<h2>Why Semantics Matter</h2>
+<main>
+
+<h2 id="Home">Why Semantics Matter</h2>
  
 <p>Semantic HTML uses elements according to the meaning of the content they contain. Choosing an element because of what it represents, rather than because of its default appearance, produces documents that are easier to understand and maintain.
  
@@ -31,97 +38,103 @@ Developers should not choose HTML elements simply because they make text bold, i
  
 The Web Accessibility Initiative, commonly abbreviated WAI, develops standards and supporting materials that help make the web more accessible to people with disabilities.</p>
  
-<h2>Common Principles for Well-Structured Pages</h2>
+    <h2 id="HTML Basics" >Common Principles for Well-Structured Pages</h2>
  
-<ul>
-<li>Use headings to create a logical outline of the document.</li>
- 
-<li>Organize related content into meaningful sections.</li>
- 
-<li>Use lists when a collection of items has a clear relationship.</li>
- 
-<li>Provide useful text alternatives for meaningful images.</li>
- 
-<li>Use links that clearly describe their destination or purpose.</li>
- 
-<li>Keep document structure separate from visual presentation.</li>
- 
-<li>Steps for Reviewing an HTML Document</li>
- 
-<li>Identify the major regions of the page.</li>
- 
-<li>Check that headings create a logical hierarchy.</li>
- 
-<li>Review lists, quotations, abbreviations, and other specialized content.</li>
- 
-<li>Confirm that images have appropriate alternative text.</li>
- 
-<li>Inspect the document for unnecessary or incorrectly used elements.</li>
- 
-<li>Run the completed page through an HTML validator.</li>
+        <ul>
+            <li>Use headings to create a logical outline of the document.</li>
+    
+            <li>Organize related content into meaningful sections.</li>
+    
+            <li>Use lists when a collection of items has a clear relationship.</li>
+    
+            <li>Provide useful text alternatives for meaningful images.</li>
+    
+            <li>Use links that clearly describe their destination or purpose.</li>
+    
+            <li>Keep document structure separate from visual presentation.</li>
+    
+            <li>Steps for Reviewing an HTML Document</li>
+    
+            <li>Identify the major regions of the page.</li>
+    
+            <li>Check that headings create a logical hierarchy.</li>
+    
+            <li>Review lists, quotations, abbreviations, and other specialized content.</li>
+    
+            <li>Confirm that images have appropriate alternative text.</li>
+    
+            <li>Inspect the document for unnecessary or incorrectly used elements.</li>
+    
+            <li>Run the completed page through an HTML validator.</li>
 
- </ul>
+        </ul>
 
 <h2>Useful HTML Terms</h2>
  
-Element
+<dl>
+    <dt><strong>Element</strong></dt>
  
-A structural or semantic component of an HTML document. Examples include headings, paragraphs, links, and lists.
+        <dd>A structural or semantic component of an HTML document. Examples include headings, paragraphs, links, and lists.</dd>
  
-Attribute
+    <dt><strong>Attribute</strong></dt>
  
-Additional information placed on an HTML element. Attributes can describe characteristics such as a link destination, an image source, or the language of a document.
+        <dd>Information placed on an HTML element. Attributes can describe characteristics such as a link destination, an image source, or the language of a document.</dd>
  
-Semantic HTML
+    <dt><strong>Semantic HTML</strong></dt>
  
-The practice of choosing HTML elements based on the meaning and purpose of the content they contain.
+        <dd>The practice of choosing HTML elements based on the meaning and purpose of the content they contain.</dd>
  
-Validation
+    <dt><strong>Validation</strong></dt>
  
-The process of checking markup against the rules of the HTML specification to identify errors and invalid structures.
+        <dd>The process of checking markup against the rules of the HTML specification to identify errors and invalid structures.</dd>
  
-Progressive Enhancement
+    <dt><strong>Progressive Enhancement</strong></dt>
  
-An approach to web development that begins with meaningful, accessible content and functionality before adding more advanced presentation or behavior.
+        <dd>An approach to web development that begins with meaningful, accessible content and functionality before adding more advanced presentation or behavior.</dd>
  
-Writing Code Clearly
+    <dt><strong>Writing Code Clearly</strong></dt>
  
-HTML documents are easier to maintain when developers follow consistent formatting conventions. For example, a developer might use the code fragment class="featured" to identify a particular classification within a document.
+        <dd>HTML documents are easier to maintain when developers follow consistent formatting conventions. For example, a developer might use the code fragment <code> class="featured"</code> to identify a particular classification within a document.
  
-When referring to code in technical writing, it is important to distinguish the code itself from the surrounding explanation.
+        When referring to code in technical writing, it is important to distinguish the code itself from the surrounding explanation.</dd>
  
-A Perspective on the Web
+    <dt><strong id="Accessibility" >A Perspective on the Web</strong></dt>
  
-Tim Berners-Lee has emphasized that the value of the web comes from its ability to connect people and information.
+        <dd>Tim Berners-Lee has emphasized that the value of the web comes from its ability to connect people and information.
  
-“The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.”
+    <cite><q>power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.</q></cite>
  
-This statement appears in materials from the World Wide Web Consortium, often referred to as the W3C, and reflects an important principle behind accessible web development.
+    This statement appears in materials from the World Wide Web Consortium, often referred to as the W3C, and reflects an important principle behind accessible web development.</dd>
  
-Semantic Structure in Practice
+    <dt><strong>Semantic Structure in Practice</strong></dt>
  
-A well-structured page does not need to be visually complicated. Even a simple article can contain several meaningful regions. The page might begin with introductory information and navigation, followed by its primary content. Within that content, related topics can be grouped together while still belonging to a larger article.
+        <dd>A well-structured page does not need to be visually complicated. Even a simple article can contain several meaningful regions. The page might begin with introductory information and navigation, followed by its primary content. Within that content, related topics can be grouped together while still belonging to a larger article.
  
-The distinction between structure and appearance is important. A heading is not simply large text. A quotation is not simply indented text. Important content is not simply bold text. Each has meaning that can be represented directly in HTML.
+    The distinction between structure and appearance is important. A heading is not simply large text. A quotation is not simply indented text. Important content is not simply bold text. Each has meaning that can be represented directly in HTML.</dd>
+</dl> 
+
+<figure>
+    <img src="https://play.nintendo.com/images/profile-mk-goomba.7bf2a8f2.aead314d58b63e27.png" alt="Image shows a goomba from the Super Mario franchise made by nintendo. The goomba is a walking mushroom with a brown cap and tanned body with long eyebrows angled down in assumed anger and eyes that are both black. The goomba has two sharp teeth that grew from the bottom of its mouth. The goomba also has feet that look like brown shoes."> </em>
  
-Image: Embed an image of your choice.
+    <div><figcaption>HTML gives different regions of a webpage meaningful roles rather than treating the entire page as one collection of generic containers.</figcaption></div>
+</figure>
+<footer>
+<h3 id="Resources">Recommended Resources</h3>
  
-The image shows a laptop displaying a webpage diagram divided into labeled regions for the page header, navigation, main content, article sections, and footer.
+<ul>
+    <li>MDN Web Docs</li>
+    <li>HTML Living Standard</li>
+    <li>Web Accessibility Initiative</li>
+    <li>W3C Markup Validation Service</li>
+ </ul>
+
+    <strong id="Contact">About This Site</strong>
  
-Caption: Semantic HTML gives different regions of a webpage meaningful roles rather than treating the entire page as one collection of generic containers.
+    <div>Web Foundations is a learning resource for students studying modern front-end development. The material emphasizes standards-based development, semantic HTML, accessibility, and the use of the native web platform.</div>
  
-Recommended Resources
- 
-MDN Web Docs
-HTML Living Standard
-Web Accessibility Initiative
-W3C Markup Validation Service
- 
-About This Site
- 
-Web Foundations is a learning resource for students studying modern front-end development. The material emphasizes standards-based development, semantic HTML, accessibility, and the use of the native web platform.
- 
-Content prepared for Web Foundations
+    <figure><cite>Content prepared for Web Foundations</cite></figure>
+</footer>
+
 </main>
 </body>
 </html>
