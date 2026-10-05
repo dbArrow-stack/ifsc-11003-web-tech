@@ -21,7 +21,14 @@ html {
   width: 1px;
 }
 
-/*----global styles*/
+/*----global styles----*/
+.container{
+  width:80vw;
+  max-width: 992px;
+  margin:40px auto;
+}
+
+/*----global styles----*/
 
 body{
   font-family: "Play", sans-serif;
@@ -52,7 +59,7 @@ header.primary p.subtitle{
   letter-spacing:2px;
 }
 
-/*header.primary nav{
+/*header.primary nav.container{
   
 }*/
 
@@ -66,6 +73,7 @@ header.primary nav ul{
 header.primary nav ul li{
   list-style-type:none;
   margin-bottom: 10px;
+  flex:1
 }
 
 /*targets the links*/
@@ -75,6 +83,33 @@ header.primary nav ul li a{
   display: block;
   border-radius:80px;
   border:10px groove #fff;
+  transition: .7s;
 }
+
+header.primary nav ul li a:hover{
+  background-color: rgba(0,0,0,.5);
+
+}
+
+#content h2{
+  color:#B52D2F;
+  border-bottom:1px solid silver;
+}
+
+#content p{
+  line-height: 2;
+}
+
+            /*---media queries---*/
+
+  @media screen and (max-width:500px){
+
+    header.primary nav ul{
+
+     flex-direction:column;
+     gap:4px;
+  }
+  }
+
 /*https://color.adobe.com/create/color-wheel?color-palette=F50002%2C77F59A%2CB52D2F%2C35A053%2C753B3B&color-palette-name=My+Color+Theme*/
 /*https://color.adobe.com/create/color-wheel?color-palette=F5000A%2C00F594%2C19F502%2C753B3D%2C587569&color-palette-name=My+Color+Theme*/
