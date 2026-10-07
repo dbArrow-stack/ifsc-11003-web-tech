@@ -31,7 +31,7 @@ html {
 /*----global styles----*/
 
 body{
-  font-family: "Play", sans-serif;
+  font-family: "times new roman", sans-serif;
   margin:0;
 }
 
@@ -100,6 +100,59 @@ header.primary nav ul li a:hover{
   line-height: 2;
 }
 
+#blog{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+#blog h2{
+  flex:0 0 100%;
+  margin: 0;
+  text-align: center;
+}
+
+#blog article{
+  box-shadow: 0 4px 8px rgba(0,0,0,.5);
+  padding: 5px;
+}
+
+figure{
+  margin:0;
+}
+
+#blog article time{
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+#blog a{
+  color:#35A053;
+}
+
+aside[aria-label="Sidebar"]{
+  background-color:#172635;
+  color:#fff;
+  padding: 40px 0;
+}
+
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:40px;
+}
+
+aside .container a{
+  color:#ffffff;
+}
+
+article.widget footer{
+  display: none;
+}
+
             /*---media queries---*/
 
   @media screen and (max-width:500px){
@@ -109,6 +162,10 @@ header.primary nav ul li a:hover{
      flex-direction:column;
      gap:4px;
   }
+  }
+
+  #blog h2{
+    text-align: center;
   }
 
 /*https://color.adobe.com/create/color-wheel?color-palette=F50002%2C77F59A%2CB52D2F%2C35A053%2C753B3B&color-palette-name=My+Color+Theme*/
