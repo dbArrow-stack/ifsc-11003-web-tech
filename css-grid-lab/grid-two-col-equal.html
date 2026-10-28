@@ -32,7 +32,34 @@
       gap: 20px;
       max-width: 80vw;
       margin: 20px auto;
+       grid-template-columns: 2fr 2fr;
     }
+
+    header.primary{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    #content{
+      grid-column: 1;
+      grid-row:2;
+    }
+
+    #blog{
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .aside{
+        grid-column: 1/ span 2;
+        grid-row: 3;
+    }
+
+    footer.primary{
+      grid-column: 1 / span 2;
+      grid-row: 4;
+    }
+    
   </style>
 
 </head>
@@ -60,7 +87,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos inventore quo exercitationem temporibus magni deserunt, quasi repellendus reiciendis? Quos, facere doloribus optio quasi numquam dolore!</p>
       <footer>Section Footer</footer>
     </section>
-    <aside>
+    <aside class="aside">
       <h2>Aside</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non eaque dolorum sequi velit molestiae ratione ducimus ipsum excepturi atque.</p>
     </aside>
