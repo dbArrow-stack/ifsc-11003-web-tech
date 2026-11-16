@@ -7,7 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-
+main h1{
+  text-align: center;
+}
 
 body{
  
@@ -17,6 +19,24 @@ body{
   font-size: 25px;
   background-color: antiquewhite;
   
+}
+
+#mcards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr) ;
+  gap:40px;
+}
+
+#rcards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+}
+
+#mcards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:40px;
 }
 
 img{
@@ -46,14 +66,6 @@ dt{
   text-transform: capitalize;
 }
 
-dl{
-  display: grid;
-  gap: 20px;
-      max-width: 50vw;
-      margin: 20px auto;
-       grid-template-columns: auto auto;
-       grid-template-rows: auto auto;
-}
 .card1{
   text-align: center;
    grid-column: 1;
